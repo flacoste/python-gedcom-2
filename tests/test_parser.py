@@ -1,5 +1,7 @@
 import unittest
 
+from pathlib import Path
+
 from python_gedcom_2.element.family import NotAnActualFamilyError
 
 from python_gedcom_2.element.object import ObjectElement
@@ -8,11 +10,13 @@ from python_gedcom_2.element.root import RootElement
 from python_gedcom_2.parser import Parser, GedcomFormatViolationError, FAMILY_MEMBERS_TYPE_PARENTS, FAMILY_MEMBERS_TYPE_HUSBAND, FAMILY_MEMBERS_TYPE_WIFE, \
     FAMILY_MEMBERS_TYPE_CHILDREN, PointerNotFoundException
 
+FILES_DIR = (Path(__file__) / '..' / 'files').resolve()
+
 
 class TestParser(unittest.TestCase):
     def test_invalidate_cache(self):
         parser = Parser()
-        parser.parse_file('../tests/files/Musterstammbaum.ged')
+        parser.parse_file(FILES_DIR / 'Musterstammbaum.ged')
 
         self.assertEqual(32, len(parser.get_element_dictionary()))
         self.assertEqual(396, len(parser.get_element_list()))
@@ -56,7 +60,7 @@ class TestParser(unittest.TestCase):
         parser = Parser()
         self.assertEqual(0, len(parser.get_root_child_elements()))
 
-        parser.parse_file('../tests/files/Musterstammbaum.ged')
+        parser.parse_file(FILES_DIR / 'Musterstammbaum.ged')
 
         self.assertEqual(34, len(parser.get_root_child_elements()))
 
@@ -112,7 +116,7 @@ class TestParser(unittest.TestCase):
         line_with_a_carriage_return_but_not_a_continuation_tag_use_case = """
             0 @I5@ INDI
                 1 NOTE This is a note field
-                    2 CONT that is continued 
+                    2 CONT that is continued
                     on the next line.
         """
         gedcom_parser = Parser()
@@ -192,7 +196,7 @@ class TestParser(unittest.TestCase):
 
     def test_parse__should_be_able_to_parse_a_single_object_from_a_string(self):
         single_object_use_case = """
-            0 @M232@ OBJE 
+            0 @M232@ OBJE
                 1 FORM jpg
                 1 FILE ~/Documents/Documents/Genealogy/Roger/ReunionPictures/photos/people/RogerOval.JPG
                 1 TITL Roger Moffat
