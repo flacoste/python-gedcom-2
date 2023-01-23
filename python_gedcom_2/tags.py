@@ -11,7 +11,7 @@ A short name of a title, description, or name.
 GEDCOM_TAG_ADDRESS = "ADDR"
 """Value: `ADDR`
 
-The contemporary place, usually required for postal purposes, of an individual, a submitter of information, 
+The contemporary place, usually required for postal purposes, of an individual, a submitter of information,
 a repository, a business, a school, or a company.
 """
 
@@ -126,7 +126,10 @@ A religious event of bestowing divine care or intercession. Sometimes given in c
 GEDCOM_TAG_BINARY_OBJECT = "BLOB"
 """Value: `BLOB`
 
-A grouping of data used as input to a multimedia system that processes binary data to represent images, sound, and video. deleted in Gedcom 5.5.1
+A grouping of data used as input to a multimedia system that processes binary data to represent images, sound, and
+video.
+
+Deleted in Gedcom 5.5.1
 """
 
 GEDCOM_TAG_BURIAL = "BURI"
@@ -144,8 +147,8 @@ The number used by a repository to identify the specific items in its collection
 GEDCOM_TAG_CASTE = "CAST"
 """Value: `CAST`
 
-The name of an individual's rank or status in society, based on racial or religious differences, or differences in wealth, inherited rank, profession, 
-occupation, etc.
+The name of an individual's rank or status in society, based on racial or religious differences, or differences in
+wealth, inherited rank, profession, occupation, etc.
 """
 
 GEDCOM_TAG_CAUSE = "CAUS"
@@ -354,8 +357,10 @@ A noteworthy happening related to an individual, a group, or an organization.
 GEDCOM_TAG_FACT = "FACT"
 """Value: `FACT`
 
-Pertaining to a noteworthy attribute or fact concerning an individual, a group, or an organization. A FACT structure is usually qualified or classified by 
-a subordinate use of the TYPE tag. new in Gedcom 5.5.1
+Pertaining to a noteworthy attribute or fact concerning an individual, a group, or an organization. A FACT structure is
+usually qualified or classified by a subordinate use of the TYPE tag.
+
+New in Gedcom 5.5.1
 """
 
 GEDCOM_TAG_FAMILY = "FAM"
@@ -374,7 +379,8 @@ Identifies the family in which an individual appears as a child.
 GEDCOM_TAG_FAMILY_FILE = "FAMF"
 """Value: `FAMF`
 
-Pertaining to, or the name of, a family file. Names stored in a file that are assigned to a family for doing temple ordinance work.
+Pertaining to, or the name of, a family file. Names stored in a file that are assigned to a family for doing temple
+ordinance work.
 """
 
 GEDCOM_TAG_FAMILY_SPOUSE = "FAMS"
@@ -515,15 +521,15 @@ GEDCOM_TAG_MARR_CONTRACT = "MARC"
 """Value: `MARC`
 ::deprecated:: As of version 1.7.0 use `GEDCOM_TAG_MARRIAGE_CONTRACT` method instead
 
-An event of recording a formal agreement of marriage, including the prenuptial agreement in which marriage partners reach 
-agreement about the property rights of one or both, securing property to their children.
+An event of recording a formal agreement of marriage, including the prenuptial agreement in which marriage partners
+reach agreement about the property rights of one or both, securing property to their children.
 """
 
 GEDCOM_TAG_MARRIAGE_CONTRACT = "MARC"
 """Value: `MARC`
 
-An event of recording a formal agreement of marriage, including the prenuptial agreement in which marriage partners reach 
-agreement about the property rights of one or both, securing property to their children.
+An event of recording a formal agreement of marriage, including the prenuptial agreement in which marriage partners
+reach agreement about the property rights of one or both, securing property to their children.
 """
 
 GEDCOM_TAG_MARR_LICENSE = "MARL"
@@ -549,15 +555,15 @@ GEDCOM_TAG_MARR_SETTLEMENT = "MARS"
 """Value: `MARS`
 ::deprecated:: As of version 1.7.0 use `GEDCOM_TAG_MARRIAGE_SETTLEMENT` method instead
 
-An event of creating an agreement between two people contemplating marriage, at which time they agree to release or modify 
-property rights that would otherwise arise from the marriage.
+An event of creating an agreement between two people contemplating marriage, at which time they agree to release or
+modify property rights that would otherwise arise from the marriage.
 """
 
 GEDCOM_TAG_MARRIAGE_SETTLEMENT = "MARS"
 """Value: `MARS`
 
-An event of creating an agreement between two people contemplating marriage, at which time they agree to release or modify 
-property rights that would otherwise arise from the marriage.
+An event of creating an agreement between two people contemplating marriage, at which time they agree to release or
+modify property rights that would otherwise arise from the marriage.
 """
 
 GEDCOM_TAG_MEDIA = "MEDI"
@@ -594,7 +600,7 @@ The event of obtaining citizenship.
 GEDCOM_TAG_CHILDREN_COUNT = "NCHI"
 """Value: `NCHI`
 
-The number of children that this person is known to be the parent of (all marriages) when subordinate to an individual, 
+The number of children that this person is known to be the parent of (all marriages) when subordinate to an individual,
 or that belong to this family when subordinate to a FAM_RECORD.
 """
 
@@ -619,15 +625,15 @@ Additional information provided by the submitter for understanding the enclosing
 GEDCOM_TAG_NAME_PREFIX = "NPFX"
 """Value: `NPFX`
 
-Text which appears on a name line before the given and surname parts of a name. i.e. ( Lt. Cmndr. ) Joseph /Allen/ jr. 
+Text which appears on a name line before the given and surname parts of a name. i.e. ( Lt. Cmndr. ) Joseph /Allen/ jr.
 In this example Lt. Cmndr. is considered as the name prefix portion.
 """
 
 GEDCOM_TAG_NAME_SUFFIX = "NSFX"
 """Value: `NSFX`
 
-Text which appears on a name line after or behind the given and surname parts of a name. i.e. Lt. Cmndr. Joseph /Allen/ ( jr. ) 
-In this example jr. is considered as the name suffix portion.
+Text which appears on a name line after or behind the given and surname parts of a name.
+i.e. Lt. Cmndr. Joseph /Allen/ ( jr. ) In this example jr. is considered as the name suffix portion.
 """
 
 GEDCOM_TAG_OBJECT = "OBJE"
@@ -694,7 +700,8 @@ Flag for private address or event.
 GEDCOM_TAG_PROBATE = "PROB"
 """Value: `PROB`
 
-An event of judicial determination of the validity of a will. May indicate several related court activities over several dates.
+An event of judicial determination of the validity of a will. May indicate several related court activities over several
+dates.
 """
 
 GEDCOM_TAG_PROPERTY = "PROP"
@@ -766,7 +773,8 @@ A permanent number assigned to a record that uniquely identifies it within a kno
 GEDCOM_TAG_REC_ID_NUMBER = "RIN"
 """Value: `RIN`
 
-A number assigned to a record by an originating automated system that can be used by a receiving system to report results pertaining to that record.
+A number assigned to a record by an originating automated system that can be used by a receiving system to report
+results pertaining to that record.
 """
 
 GEDCOM_TAG_ROLE = "ROLE"
@@ -869,15 +877,15 @@ The exact wording found in an original source document.
 GEDCOM_TAG_TIME = "TIME"
 """Value: `TIME`
 
-A time value in a 24-hour clock format, including hours, minutes, and optional seconds, separated by a 
+A time value in a 24-hour clock format, including hours, minutes, and optional seconds, separated by a
 colon (:). Fractions of seconds are shown in decimal notation.
 """
 
 GEDCOM_TAG_TITLE = "TITL"
 """Value: `TITL`
 
-A description of a specific writing or other work, such as the title of a book when used in a source context, 
-or a formal designation used by an individual in connection with positions of royalty or other social status, 
+A description of a specific writing or other work, such as the title of a book when used in a source context,
+or a formal designation used by an individual in connection with positions of royalty or other social status,
 such as Grand Duke.
 """
 
@@ -890,8 +898,8 @@ At level 0, specifies the end of a GEDCOM transmission.
 GEDCOM_TAG_TYPE = "TYPE"
 """Value: `TYPE`
 
-A further qualification to the meaning of the associated superior tag. The value does not have any computer 
-processing reliability. It is more in the form of a short one or two word note that should be displayed any 
+A further qualification to the meaning of the associated superior tag. The value does not have any computer
+processing reliability. It is more in the form of a short one or two word note that should be displayed any
 time the associated data is displayed.
 """
 
@@ -916,6 +924,6 @@ World Wide Web home page. new in Gedcom 5.5.1
 GEDCOM_TAG_WILL = "WILL"
 """Value: `WILL`
 
-A legal document treated as an event, by which a person disposes of his or her estate, to take effect after 
+A legal document treated as an event, by which a person disposes of his or her estate, to take effect after
 death. The event date is the date the will was signed while the person was alive. (See also PROBate)
 """

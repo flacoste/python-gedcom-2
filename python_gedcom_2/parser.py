@@ -8,7 +8,6 @@ from sys import version_info
 
 from python_gedcom_2.element_creator import ElementCreator
 
-from python_gedcom_2.element.element import Element
 from python_gedcom_2.element.family import FamilyElement, NotAnActualFamilyError
 from python_gedcom_2.element.individual import IndividualElement, NotAnActualIndividualError
 from python_gedcom_2.element.root import RootElement
